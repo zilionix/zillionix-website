@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import logo from '@/assets/logo.svg'
 
 const navigation = [
   { name: 'Product', href: '#features' },
@@ -37,11 +39,15 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Z</span>
-            </div>
-            <span className="text-xl font-bold gradient-text">Zilionix</span>
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+            <Image 
+              src={logo} 
+              alt="Zilionix Logo" 
+              width={200} 
+              height={60} 
+              className="h-8 w-auto sm:h-10 md:h-12 lg:h-14"
+              priority
+            />
           </Link>
         </div>
         
@@ -89,11 +95,15 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50" />
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5 flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">Z</span>
-              </div>
-              <span className="text-xl font-bold">Zilionix</span>
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+              <Image 
+                src={logo} 
+                alt="Zilionix Logo" 
+                width={150} 
+                height={45} 
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
             <button
               type="button"

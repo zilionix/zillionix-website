@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Github, Twitter, Linkedin, Youtube } from 'lucide-react'
+import logo from '@/assets/logo.svg'
 
 const navigation = {
   product: [
@@ -48,11 +50,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">Z</span>
-              </div>
-              <span className="text-xl font-bold gradient-text">Zilionix</span>
+            <div className="flex items-center">
+              <Image 
+                src={logo} 
+                alt="Zilionix Logo" 
+                width={180} 
+                height={54} 
+                className="h-10 w-auto sm:h-12 md:h-14"
+              />
             </div>
             <p className="text-sm leading-6 text-muted-foreground max-w-xs">
               The enterprise AI agent orchestration platform. Build and deploy autonomous 

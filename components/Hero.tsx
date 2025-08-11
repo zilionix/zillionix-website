@@ -5,7 +5,7 @@ import { ArrowRight, Play, Zap, Shield, Brain, DollarSign } from 'lucide-react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-const Orb = dynamic(() => import('./Orb'), { ssr: false })
+const DotGrid = dynamic(() => import('./DotGrid'), { ssr: false })
 
 const stats = [
   { label: "Workflows Automated", value: "500K+" },
@@ -17,17 +17,19 @@ const stats = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-16 lg:pt-40 lg:pb-24 bg-gradient-to-b from-gray-50 to-white">
-      {/* Test Orb directly */}
+      {/* Interactive Dot Grid Background */}
       <div className="absolute inset-0" style={{ zIndex: 1 }}>
-        <div className="absolute top-10 left-10" style={{ width: '600px', height: '600px' }}>
-          <Orb hue={280} hoverIntensity={0.5} rotateOnHover={true} />
-        </div>
-        <div className="absolute top-20 right-10" style={{ width: '500px', height: '500px' }}>
-          <Orb hue={220} hoverIntensity={0.3} rotateOnHover={true} />
-        </div>
-        <div className="absolute bottom-10 left-1/3" style={{ width: '400px', height: '400px' }}>
-          <Orb hue={140} hoverIntensity={0.4} rotateOnHover={true} />
-        </div>
+        <DotGrid
+          dotSize={3}
+          gap={20}
+          baseColor="#E9D5FF"
+          activeColor="#7C3AED"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
