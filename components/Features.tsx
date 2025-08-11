@@ -56,7 +56,7 @@ const capabilities = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 sm:py-32 bg-background">
+    <section id="features" className="py-24 sm:py-32 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div

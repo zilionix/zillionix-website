@@ -132,4 +132,4 @@ The site is prepared for analytics integration:
 
 ## 📄 License
 
-Copyright © 2024 Zilionix, Inc. All rights reserved.
+Copyright © 2025 Zilionix, Inc. All rights reserved.

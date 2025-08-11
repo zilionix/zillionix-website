@@ -89,7 +89,7 @@ const comparisonFeatures = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 sm:py-32 bg-background">
+    <section id="pricing" className="py-24 sm:py-32 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div
@@ -121,9 +121,9 @@ export default function Pricing() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`relative rounded-2xl ${
                 tier.featured
-                  ? 'ring-2 ring-primary shadow-xl scale-105'
-                  : 'ring-1 ring-border'
-              } bg-card p-8`}
+                  ? 'ring-2 ring-purple-500 shadow-2xl scale-105 bg-white'
+                  : 'ring-1 ring-gray-200 bg-white shadow-lg'
+              } p-8`}
             >
               {tier.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -175,8 +175,8 @@ export default function Pricing() {
                 href={tier.id === 'enterprise' ? '/contact' : '/signup'}
                 className={`block w-full rounded-lg px-4 py-3 text-center text-sm font-semibold transition-all ${
                   tier.featured
-                    ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:opacity-90'
-                    : 'bg-primary/10 text-primary hover:bg-primary/20'
+                    ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:opacity-90 shadow-md'
+                    : 'bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200'
                 }`}
               >
                 {tier.cta}

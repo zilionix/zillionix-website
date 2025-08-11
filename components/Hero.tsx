@@ -5,7 +5,7 @@ import { ArrowRight, Play, Zap, Shield, Brain, DollarSign } from 'lucide-react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-const Orb = dynamic(() => import('./Orb'), { ssr: false })
+const DotGrid = dynamic(() => import('./DotGrid'), { ssr: false })
 
 const stats = [
   { label: "Workflows Automated", value: "500K+" },
@@ -16,18 +16,20 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-16 lg:pt-40 lg:pb-24" style={{ backgroundColor: '#0a0a0a' }}>
-      {/* Test Orb directly */}
+    <section className="relative overflow-hidden pt-32 pb-16 lg:pt-40 lg:pb-24 bg-gradient-to-b from-gray-50 to-white">
+      {/* Interactive Dot Grid Background */}
       <div className="absolute inset-0" style={{ zIndex: 1 }}>
-        <div className="absolute top-10 left-10" style={{ width: '600px', height: '600px' }}>
-          <Orb hue={280} hoverIntensity={0.5} rotateOnHover={true} />
-        </div>
-        <div className="absolute top-20 right-10" style={{ width: '500px', height: '500px' }}>
-          <Orb hue={220} hoverIntensity={0.3} rotateOnHover={true} />
-        </div>
-        <div className="absolute bottom-10 left-1/3" style={{ width: '400px', height: '400px' }}>
-          <Orb hue={140} hoverIntensity={0.4} rotateOnHover={true} />
-        </div>
+        <DotGrid
+          dotSize={3}
+          gap={20}
+          baseColor="#E9D5FF"
+          activeColor="#7C3AED"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
@@ -37,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-8 inline-flex items-center rounded-full border border-purple-500/20 bg-purple-500/10 px-3 py-1 text-sm font-medium text-purple-400"
+            className="mb-8 inline-flex items-center rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-sm font-medium text-purple-700 shadow-sm"
           >
             <Zap className="mr-2 h-3 w-3" />
             Multi-Agent Orchestration Platform
@@ -81,7 +83,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/demo"
-              className="rounded-lg border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground hover:bg-muted transition-colors flex items-center"
+              className="rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-all shadow-sm flex items-center"
             >
               <Play className="mr-2 h-4 w-4" />
               Watch Demo
@@ -96,15 +98,15 @@ export default function Hero() {
             className="mt-10 flex items-center justify-center gap-x-6 text-xs text-muted-foreground"
           >
             <div className="flex items-center gap-x-2">
-              <Shield className="h-4 w-4 text-green-500" />
+              <Shield className="h-4 w-4 text-green-600" />
               <span>SOC 2 Compliant</span>
             </div>
             <div className="flex items-center gap-x-2">
-              <Brain className="h-4 w-4 text-purple-500" />
+              <Brain className="h-4 w-4 text-purple-600" />
               <span>12+ LLM Providers</span>
             </div>
             <div className="flex items-center gap-x-2">
-              <DollarSign className="h-4 w-4 text-blue-500" />
+              <DollarSign className="h-4 w-4 text-blue-600" />
               <span>Cost Control Built-in</span>
             </div>
           </motion.div>
@@ -135,8 +137,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-20"
         >
-          <div className="relative rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-2">
-            <div className="aspect-video rounded-lg bg-gradient-to-br from-purple-900/20 to-blue-900/20 flex items-center justify-center">
+          <div className="relative rounded-2xl border border-gray-200 bg-white shadow-xl p-2">
+            <div className="aspect-video rounded-lg bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center border border-gray-100">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-blue-500 mb-4">
                   <Play className="w-8 h-8 text-white ml-1" />
@@ -147,11 +149,8 @@ export default function Hero() {
             </div>
             
             {/* Floating badges */}
-            <div className="absolute -top-4 -right-4 rounded-lg bg-green-500/10 border border-green-500/20 px-3 py-1 text-xs text-green-400">
+            <div className="absolute -top-4 -right-4 rounded-lg bg-green-50 border border-green-200 px-3 py-1 text-xs text-green-700 shadow-sm">
               Live Demo
-            </div>
-            <div className="absolute -bottom-4 -left-4 rounded-lg bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-xs text-blue-400">
-              No Credit Card Required
             </div>
           </div>
         </motion.div>
