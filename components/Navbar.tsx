@@ -32,7 +32,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-200",
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm" : "bg-white/80 backdrop-blur-sm"
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">

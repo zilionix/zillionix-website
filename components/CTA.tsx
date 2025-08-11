@@ -8,10 +8,10 @@ export default function CTA() {
   return (
     <section className="relative py-24 sm:py-32 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600" />
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500" />
       
       {/* Pattern overlay */}
-      <div className="absolute inset-0 bg-grid-white/10" />
+      <div className="absolute inset-0 bg-grid-white/20" />
       
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div

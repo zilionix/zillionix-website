@@ -105,9 +105,9 @@ export default function Orb({
       return vec4(colorIn.rgb / (a + 1e-5), a);
     }
     
-    const vec3 baseColor1 = vec3(0.611765, 0.262745, 0.996078);
-    const vec3 baseColor2 = vec3(0.298039, 0.760784, 0.913725);
-    const vec3 baseColor3 = vec3(0.062745, 0.078431, 0.600000);
+    const vec3 baseColor1 = vec3(0.811765, 0.562745, 0.996078);
+    const vec3 baseColor2 = vec3(0.598039, 0.860784, 0.953725);
+    const vec3 baseColor3 = vec3(0.862745, 0.878431, 0.950000);
     const float innerRadius = 0.6;
     const float noiseScale = 0.65;
     
@@ -171,7 +171,7 @@ export default function Orb({
     void main() {
       vec2 fragCoord = vUv * iResolution.xy;
       vec4 col = mainImage(fragCoord);
-      gl_FragColor = vec4(col.rgb * col.a, col.a);
+      gl_FragColor = vec4(col.rgb * col.a, col.a * 0.3);
     }
   `;
 
