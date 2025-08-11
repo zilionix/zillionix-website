@@ -152,9 +152,6 @@ export default function Hero() {
             <div className="absolute -top-4 -right-4 rounded-lg bg-green-50 border border-green-200 px-3 py-1 text-xs text-green-700 shadow-sm">
               Live Demo
             </div>
-            <div className="absolute -bottom-4 -left-4 rounded-lg bg-blue-50 border border-blue-200 px-3 py-1 text-xs text-blue-700 shadow-sm">
-              No Credit Card Required
-            </div>
           </div>
         </motion.div>
       </div>
