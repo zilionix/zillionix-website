@@ -47,9 +47,9 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="flex items-center">
               <Image 
                 src={logo} 
@@ -76,11 +76,11 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-10 grid grid-cols-2 gap-6 xl:col-span-2 xl:mt-0">
+            <div className="md:grid md:grid-cols-2 md:gap-6">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Product</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
                       <Link
@@ -93,9 +93,9 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+              <div className="mt-8 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Resources</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
                       <Link
@@ -109,10 +109,10 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-6">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Company</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <Link
@@ -125,9 +125,9 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+              <div className="mt-8 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Legal</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-4 space-y-3">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <Link
@@ -144,12 +144,12 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-16 border-t border-border pt-8 sm:mt-20 lg:mt-24">
+        <div className="mt-10 border-t border-border pt-6 sm:mt-12 lg:mt-16">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-xs leading-5 text-muted-foreground">
               &copy; {new Date().getFullYear()} Zilionix, Inc. All rights reserved.
             </p>
-            <div className="mt-4 sm:mt-0 flex space-x-6 text-xs text-muted-foreground">
+            <div className="mt-3 sm:mt-0 flex space-x-4 text-xs text-muted-foreground">
               <span>SOC 2 Type II Certified</span>
               <span>•</span>
               <span>GDPR Compliant</span>

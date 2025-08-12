@@ -56,7 +56,7 @@ const capabilities = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 sm:py-32 bg-white">
+    <section id="features" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div
@@ -68,10 +68,10 @@ export default function Features() {
             <h2 className="text-base font-semibold leading-7 text-primary">
               Enterprise-Ready Platform
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <p className="mt-1 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Everything you need to deploy AI agents in production
             </p>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+            <p className="mt-3 text-lg leading-8 text-muted-foreground">
               Built from the ground up for enterprise automation with security, 
               scalability, and intelligent orchestration at its core.
             </p>
@@ -79,8 +79,8 @@ export default function Features() {
         </div>
 
         {/* Main features grid */}
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
+        <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-3 lg:gap-y-8">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.name}
@@ -96,7 +96,7 @@ export default function Features() {
                   </div>
                   <span className="ml-16">{feature.name}</span>
                 </dt>
-                <dd className="mt-2 ml-16 text-base leading-7 text-muted-foreground">
+                <dd className="mt-1 ml-16 text-base leading-7 text-muted-foreground">
                   {feature.description}
                 </dd>
               </motion.div>
@@ -110,7 +110,7 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-20 rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-8"
+          className="mt-10 rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-6"
         >
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {capabilities.map((capability) => (
@@ -130,17 +130,17 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-20"
+          className="mt-10"
         >
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-foreground">Why teams choose Zilionix</h3>
-            <p className="mt-4 text-muted-foreground">See how we compare to alternatives</p>
+            <p className="mt-2 text-muted-foreground">See how we compare to alternatives</p>
           </div>
           
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-6 lg:grid-cols-3">
             <div className="rounded-lg border border-border p-6">
-              <h4 className="font-semibold text-foreground mb-4">vs. Building In-House</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <h4 className="font-semibold text-foreground mb-3">vs. Building In-House</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="mr-2 text-green-500">✓</span>
                   <span>6 months faster deployment</span>
@@ -157,8 +157,8 @@ export default function Features() {
             </div>
             
             <div className="rounded-lg border border-border p-6">
-              <h4 className="font-semibold text-foreground mb-4">vs. Other AI Platforms</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <h4 className="font-semibold text-foreground mb-3">vs. Other AI Platforms</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="mr-2 text-green-500">✓</span>
                   <span>Multi-agent orchestration</span>
@@ -175,8 +175,8 @@ export default function Features() {
             </div>
             
             <div className="rounded-lg border border-border p-6">
-              <h4 className="font-semibold text-foreground mb-4">vs. Point Solutions</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <h4 className="font-semibold text-foreground mb-3">vs. Point Solutions</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="mr-2 text-green-500">✓</span>
                   <span>Unified platform approach</span>

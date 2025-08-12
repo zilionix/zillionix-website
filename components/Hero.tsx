@@ -117,7 +117,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-20 grid grid-cols-2 gap-6 sm:grid-cols-4"
+          className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4"
         >
           {stats.map((stat, index) => (
             <div

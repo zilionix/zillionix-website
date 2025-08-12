@@ -89,7 +89,7 @@ const comparisonFeatures = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 sm:py-32 bg-white">
+    <section id="pricing" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div
@@ -101,17 +101,17 @@ export default function Pricing() {
             <h2 className="text-base font-semibold leading-7 text-primary">
               Pricing
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <p className="mt-1 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Choose the right plan for your team
             </p>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+            <p className="mt-3 text-lg leading-8 text-muted-foreground">
               Start with a 14-day free trial. No credit card required.
             </p>
           </motion.div>
         </div>
 
         {/* Pricing cards */}
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-8 grid max-w-lg grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.id}
@@ -123,7 +123,7 @@ export default function Pricing() {
                 tier.featured
                   ? 'ring-2 ring-purple-500 shadow-2xl scale-105 bg-white'
                   : 'ring-1 ring-gray-200 bg-white shadow-lg'
-              } p-8`}
+              } p-6`}
             >
               {tier.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -133,7 +133,7 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-4">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
                     <div className={`inline-flex h-10 w-10 items-center justify-center rounded-lg ${
@@ -148,15 +148,15 @@ export default function Pricing() {
                 </div>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-4">
                 <p className="flex items-baseline">
                   <span className="text-4xl font-bold text-foreground">{tier.price}</span>
                   {tier.price !== 'Custom' && <span className="ml-1 text-muted-foreground">/month</span>}
                 </p>
-                <p className="mt-3 text-sm text-muted-foreground">{tier.description}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{tier.description}</p>
               </div>
 
-              <ul className="mb-8 space-y-3">
+              <ul className="mb-6 space-y-2">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
@@ -192,9 +192,9 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-20"
+          className="mt-10"
         >
-          <h3 className="text-center text-2xl font-bold text-foreground mb-12">
+          <h3 className="text-center text-2xl font-bold text-foreground mb-6">
             Detailed Feature Comparison
           </h3>
           <div className="overflow-x-auto">
@@ -227,12 +227,12 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-20 text-center"
+          className="mt-10 text-center"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-4">
+          <h3 className="text-xl font-semibold text-foreground mb-3">
             Questions about pricing?
           </h3>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-muted-foreground mb-4">
             Our team is here to help you find the perfect plan
           </p>
           <div className="flex justify-center gap-4">
