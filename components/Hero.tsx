@@ -16,7 +16,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-20 pb-12 lg:pt-24 lg:pb-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="relative overflow-hidden pt-32 pb-16 lg:pt-40 lg:pb-24 bg-gradient-to-b from-gray-50 to-white">
       {/* Interactive Dot Grid Background */}
       <div className="absolute inset-0" style={{ zIndex: 1 }}>
         <DotGrid
@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-4 inline-flex items-center rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-sm font-medium text-purple-700 shadow-sm"
+            className="mb-8 inline-flex items-center rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-sm font-medium text-purple-700 shadow-sm"
           >
             <Zap className="mr-2 h-3 w-3" />
             Multi-Agent Orchestration Platform
@@ -61,7 +61,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-4 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto"
+            className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto"
           >
             Deploy autonomous AI agents that automate complex workflows, integrate with any system, 
             and scale across your entire organization with enterprise-grade security.
@@ -72,7 +72,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-6 flex items-center justify-center gap-x-4"
+            className="mt-10 flex items-center justify-center gap-x-4"
           >
             <Link
               href="/"
@@ -95,7 +95,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-6 flex items-center justify-center gap-x-6 text-xs text-muted-foreground"
+            className="mt-10 flex items-center justify-center gap-x-6 text-xs text-muted-foreground"
           >
             <div className="flex items-center gap-x-2">
               <Shield className="h-4 w-4 text-green-600" />
@@ -117,15 +117,15 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4"
+          className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4"
         >
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="glass-effect rounded-lg p-4 text-center"
+              className="glass-effect rounded-lg p-6 text-center"
             >
               <div className="text-3xl font-bold gradient-text">{stat.value}</div>
-              <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
+              <div className="mt-2 text-sm text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -135,12 +135,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-12"
+          className="mt-20"
         >
           <div className="relative rounded-2xl border border-gray-200 bg-white shadow-xl p-2">
             <div className="aspect-video rounded-lg bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center border border-gray-100">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-purple-600 to-blue-500 mb-3">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-blue-500 mb-4">
                   <Play className="w-8 h-8 text-white ml-1" />
                 </div>
                 <p className="text-muted-foreground">Interactive Demo</p>

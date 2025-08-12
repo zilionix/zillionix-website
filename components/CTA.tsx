@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function CTA() {
   return (
-    <section className="relative py-20 sm:py-24 overflow-hidden">
+    <section className="relative py-24 sm:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-500" />
       
@@ -21,7 +21,7 @@ export default function CTA() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <div className="mb-6 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white backdrop-blur-sm">
+          <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white backdrop-blur-sm">
             <Sparkles className="mr-2 h-3 w-3" />
             Limited Time: 30% off first 3 months
           </div>
@@ -36,7 +36,7 @@ export default function CTA() {
             Start your free trial today and see results in minutes.
           </p>
           
-          <div className="mt-8 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="/"
               className="group rounded-lg bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 transition-all flex items-center"
@@ -70,7 +70,7 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-8 sm:max-w-xl sm:grid-cols-3 sm:gap-6 lg:max-w-4xl"
+          className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 sm:max-w-xl sm:grid-cols-3 sm:gap-6 lg:max-w-4xl"
         >
           <div className="text-center">
             <div className="text-4xl font-bold text-white">500K+</div>
