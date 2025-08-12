@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import {
   Users, Shield, Brain, DollarSign, Zap, BarChart3,
-  Cloud, Code, Lock, Workflow, Eye, Sparkles
+  Cloud, Code, Lock, Workflow, Eye, Sparkles, LibraryBig
 } from 'lucide-react'
 
 const features = [
@@ -26,9 +26,9 @@ const features = [
     gradient: 'from-blue-600 to-cyan-600',
   },
   {
-    name: 'Cost Management',
-    description: 'Real-time usage tracking, budget alerts, and cost optimization recommendations prevent runaway AI costs.',
-    icon: DollarSign,
+    name: 'Built-in RAG as Knowledge Base',
+    description: 'Automatically index and retrieve relevant documents, emails, and data sources to provide agents with real-time context for better decision making.',
+    icon: LibraryBig,
     gradient: 'from-yellow-600 to-orange-600',
   },
   {

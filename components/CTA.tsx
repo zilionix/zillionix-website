@@ -38,14 +38,14 @@ export default function CTA() {
           
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
-              href="/signup"
+              href="/"
               className="group rounded-lg bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 transition-all flex items-center"
             >
               Start Free Trial
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/demo"
+              href="/"
               className="rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white hover:bg-white/20 transition-colors"
             >
               Schedule Demo

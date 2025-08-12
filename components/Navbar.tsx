@@ -76,13 +76,7 @@ export default function Navbar() {
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <Link
-            href="/login"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Sign in
-          </Link>
-          <Link
-            href="/signup"
+            href="/"
             className="text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
           >
             Start Free Trial
@@ -130,13 +124,7 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <Link
-                  href="/login"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-foreground hover:bg-muted"
-                >
-                  Sign in
-                </Link>
-                <Link
-                  href="/signup"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-gradient-to-r from-purple-600 to-blue-500 text-white mt-2"
                 >
                   Start Free Trial

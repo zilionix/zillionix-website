@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Github, Twitter, Linkedin, Youtube } from 'lucide-react'
+import { Github, Twitter, Linkedin, Youtube, X } from 'lucide-react'
 import logo from '@/assets/logo.svg'
 
 const navigation = {
@@ -8,35 +8,35 @@ const navigation = {
     { name: 'Features', href: '#features' },
     { name: 'Use Cases', href: '#use-cases' },
     { name: 'Pricing', href: '#pricing' },
-    { name: 'Changelog', href: '/changelog' },
-    { name: 'Roadmap', href: '/roadmap' },
+    // { name: 'Changelog', href: '/changelog' },
+    // { name: 'Roadmap', href: '/roadmap' },
   ],
   resources: [
-    { name: 'Documentation', href: '/docs' },
-    { name: 'API Reference', href: '/api' },
-    { name: 'Guides', href: '/guides' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Community', href: '/community' },
+    { name: 'Documentation', href: '/' },
+    { name: 'API Reference', href: '/' },
+    // { name: 'Guides', href: '/guides' },
+    // { name: 'Blog', href: '/blog' },
+    { name: 'Community', href: '/' },
   ],
   company: [
-    { name: 'About', href: '/about' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Partners', href: '/partners' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Press Kit', href: '/press' },
+    { name: 'About', href: '/' },
+    { name: 'Careers', href: '/' },
+    { name: 'Partners', href: '/' },
+    // { name: 'Contact', href: '/contact' },
+    // { name: 'Press Kit', href: '/press' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
-    { name: 'Security', href: '/security' },
-    { name: 'Compliance', href: '/compliance' },
-    { name: 'SLA', href: '/sla' },
+    { name: 'Privacy Policy', href: '/' },
+    { name: 'Terms of Service', href: '/' },
+    { name: 'Security', href: '/' },
+    // { name: 'Compliance', href: '/compliance' },
+    // { name: 'SLA', href: '/sla' },
   ],
 }
 
 const social = [
-  { name: 'GitHub', href: '#', icon: Github },
-  { name: 'Twitter', href: '#', icon: Twitter },
+  // { name: 'GitHub', href: '#', icon: Github },
+  { name: 'X', href: '#', icon: X },
   { name: 'LinkedIn', href: '#', icon: Linkedin },
   { name: 'YouTube', href: '#', icon: Youtube },
 ]
