@@ -34,7 +34,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-200",
-        scrolled ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm" : "bg-white/80 backdrop-blur-sm"
+        scrolled ? "bg-white/30 backdrop-blur-md border-b border-gray-200/20 shadow-sm" : "bg-transparent"
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -93,7 +93,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div className={cn("lg:hidden", mobileMenuOpen ? "block" : "hidden")}>
         <div className="fixed inset-0 z-50" />
-        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border">
+        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/90 backdrop-blur-lg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border/30">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center">
               <Image 
