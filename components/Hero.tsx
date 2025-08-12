@@ -75,14 +75,14 @@ export default function Hero() {
             className="mt-10 flex items-center justify-center gap-x-4"
           >
             <Link
-              href="/signup"
+              href="/"
               className="group rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-all flex items-center"
             >
               Start Free Trial
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/demo"
+              href="/"
               className="rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-all shadow-sm flex items-center"
             >
               <Play className="mr-2 h-4 w-4" />
@@ -99,7 +99,7 @@ export default function Hero() {
           >
             <div className="flex items-center gap-x-2">
               <Shield className="h-4 w-4 text-green-600" />
-              <span>SOC 2 Compliant</span>
+              <span>Built-in RAG as Knowledge Base</span>
             </div>
             <div className="flex items-center gap-x-2">
               <Brain className="h-4 w-4 text-purple-600" />
