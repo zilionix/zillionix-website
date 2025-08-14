@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Github, Twitter, Linkedin, Youtube, X } from 'lucide-react'
+import { FaXTwitter, FaLinkedin, FaYoutube, FaGithub } from 'react-icons/fa6'
 import logo from '@/assets/logo.svg'
 
 const navigation = {
@@ -35,10 +35,10 @@ const navigation = {
 }
 
 const social = [
-  // { name: 'GitHub', href: '#', icon: Github },
-  { name: 'X', href: '#', icon: X },
-  { name: 'LinkedIn', href: '#', icon: Linkedin },
-  { name: 'YouTube', href: '#', icon: Youtube },
+  { name: 'LinkedIn', href: 'https://linkedin.com/company/zilionix', icon: FaLinkedin },
+  { name: 'GitHub', href: 'https://github.com/zilionix', icon: FaGithub },
+  { name: 'X', href: 'https://x.com/zilionix', icon: FaXTwitter },
+  { name: 'YouTube', href: 'https://youtube.com/@zilionix', icon: FaYoutube },
 ]
 
 export default function Footer() {
@@ -68,6 +68,8 @@ export default function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <span className="sr-only">{item.name}</span>

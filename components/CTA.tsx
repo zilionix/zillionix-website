@@ -23,7 +23,7 @@ export default function CTA() {
         >
           <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white backdrop-blur-sm">
             <Sparkles className="mr-2 h-3 w-3" />
-            Limited Time: 30% off first 3 months
+            Start with a 14-days free trial
           </div>
           
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">

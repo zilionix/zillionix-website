@@ -124,8 +124,8 @@ export default function Features() {
           </div>
         </motion.div>
 
-        {/* Feature comparison */}
-        <motion.div
+        {/* Feature comparison - WHY TEAMS CHOOSE ZILIONIX - TEMPORARILY HIDDEN */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -192,7 +192,7 @@ export default function Features() {
               </ul>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
