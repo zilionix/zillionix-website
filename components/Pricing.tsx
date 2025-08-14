@@ -105,7 +105,7 @@ export default function Pricing() {
               Choose the right plan for your team
             </p>
             <p className="mt-3 text-lg leading-8 text-muted-foreground">
-              Start with a 14-day free trial. No credit card required.
+              Start with a 14-days free trial. No credit card required.
             </p>
           </motion.div>
         </div>
@@ -186,8 +186,8 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Comparison table */}
-        <motion.div
+        {/* Comparison table - DETAILED FEATURE COMPARISON - TEMPORARILY HIDDEN */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -219,7 +219,7 @@ export default function Pricing() {
               </tbody>
             </table>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* FAQ */}
         <motion.div

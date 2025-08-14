@@ -153,8 +153,8 @@ export default function UseCases() {
           ))}
         </div>
 
-        {/* Industry examples */}
-        <motion.div
+        {/* Industry examples - TRUSTED ACROSS INDUSTRIES - TEMPORARILY HIDDEN */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -178,7 +178,7 @@ export default function UseCases() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* CTA Section */}
         <motion.div

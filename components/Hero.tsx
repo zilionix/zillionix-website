@@ -130,8 +130,8 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Interactive demo preview */}
-        <motion.div
+        {/* Interactive demo preview - TEMPORARILY HIDDEN */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -148,12 +148,11 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Floating badges */}
             <div className="absolute -top-4 -right-4 rounded-lg bg-green-50 border border-green-200 px-3 py-1 text-xs text-green-700 shadow-sm">
               Live Demo
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
